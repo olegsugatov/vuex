@@ -34,7 +34,7 @@ export default {
         },
         // как обратиться одному геттеру к другому
         postsCount(state, getters){
-            return state.validPosts.length
+            return getters.validPosts.length
         }
     }
 }

@@ -13,7 +13,7 @@
 // helper для упрощения получения getters > mapGetters. 
 // Методы, которые позводяют смапить какие-то сущности из Store
 import { mapGetters, mapActions } from 'vuex';
-import PostForm from './components/PostForm'
+import PostForm from './components/PostForm';
 export default {
   name: 'App',
   // computed: {
@@ -24,7 +24,7 @@ export default {
   // },
 
   // вариант работы с Vuex
-  computed: mapGetters(['allPosts', 'postsCount']),
+  computed: mapGetters(['validPosts', 'postsCount']),
   methods: mapActions(['fetchPosts']),
   components: { PostForm },
   async mounted() {
